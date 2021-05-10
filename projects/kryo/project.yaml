@@ -1,6 +1,6 @@
 homepage: "http://esotericsoftware.com/"
 language: jvm
-primary_contact: "???"
+primary_contact: "thomas@umschalt.com"
 auto_ccs:
   - "wagner@code-intelligence.com"
 fuzzing_engines:
