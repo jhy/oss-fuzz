@@ -9,5 +9,5 @@ ENV MVN $SRC/maven/apache-maven-3.6.3/bin/mvn
 RUN git clone --depth 1 https://github.com/zxing/zxing
 
 COPY build.sh $SRC/
-COPY QRCodeFuzzer.java $SRC/
+COPY MultiFormatDecodeFuzzer.java $SRC/
 WORKDIR $SRC/zxing
