@@ -9,5 +9,5 @@ ENV MVN $SRC/maven/apache-maven-3.6.3/bin/mvn
 RUN git clone --depth 1 https://github.com/zxing/zxing
 
 COPY build.sh $SRC/
-COPY MultiFormatDecodeFuzzer.java $SRC/
+COPY MultiFormatDecodeFuzzer.java MultiFormatEncodeFuzzer.java $SRC/
 WORKDIR $SRC/zxing
