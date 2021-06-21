@@ -30,6 +30,7 @@ import com.google.zxing.ResultMetadataType;
 import com.google.zxing.common.HybridBinarizer;
 
 import javax.imageio.ImageIO;
+import java.io.IOException;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -50,7 +51,7 @@ public class MultiFormatDecodeFuzzer {
 
         try {
             image = ImageIO.read(is);
-        } catch (Exception e) { // imageIO is buggy in many openjdk versions, catch everything to reach zxing code
+        } catch (IOException e) { // imageIO is buggy in many openjdk versions, catch everything to reach zxing code
             return;
         }
 
